@@ -1,4 +1,4 @@
-Persian-Lorem-Ipsum-Plugin-for-Sketch
+Persian-Lorem-Ipsum-Plugin-for-Sketch - Version 2.0.0
 
 =============================
 
