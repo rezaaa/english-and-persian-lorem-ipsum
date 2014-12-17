@@ -4,7 +4,7 @@ Persian-Lorem-Ipsum-Plugin-for-Sketch
 
 This is a plugin for quickly creating persian (farsi) Lorem Ipsum text in Sketch.
 
-<pre style="direction:rtl;">
+<pre>
 لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد.
 </pre>
 
