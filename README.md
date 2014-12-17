@@ -24,4 +24,4 @@ Select 'Persian Lorem Ipsum' from Plugins menu.
 
 =============================
 
-My thanks to brandonbeecroft for English Lorem Ipsum Sketch Plugin.
+My thanks to <a href="https://github.com/brandonbeecroft">brandonbeecroft</a> for English Lorem Ipsum Sketch Plugin.
