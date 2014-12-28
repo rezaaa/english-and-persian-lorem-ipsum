@@ -1,22 +1,30 @@
-// Version 2.0.0
-// shortcut for text (shift option cmd F)
+// shortcut for text (option cmd ])
+// Version 2.1.0
 
-var limitNum = [doc askForUserInput:"تعداد کاراکتر مورد نیازتان را وارد کنید" initialValue:"30"]
+if(selection.length()>0){
+    var limitNum = [doc askForUserInput:"تعداد کاراکتر مورد نیازتان را وارد کنید" initialValue:"30"]
+    var repeatNum = limitNum / 661;
 
-if(limitNum <= 661 && limitNum > 0){
-	limit = limitNum
+    if(limitNum <= 10000 && limitNum > -1){
+        limit = limitNum
+    }
+    else{
+        var app = [NSApplication sharedApplication];
+        [app displayDialog:"مقدار وارد شده باید بین ۱ تا ۱۰,۰۰۰ باشد" withTitle:"خطا!"]
+    }
+
+    for (var i=0; i<selection.length(); i++) {
+        var layer = selection[i];  
+        var persianLoremText = "";
+        for (var i=0; i < repeatNum; i++) {
+            persianLoremText = persianLoremText + @"لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیستری را برای طراحان رایانه ای و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.";
+        }
+        [layer setTextAlignment:1]; // Align Right
+        [layer setName:@"Persian Lorem Ipsum"];
+        [layer setStringValue:persianLoremText.substring(0,limit)];
+    }
 }
 else{
     var app = [NSApplication sharedApplication];
-    [app displayDialog:"مقدار وارد شده باید بین ۱ تا ۶۶۱ باشد :)" withTitle:"خطا!"]
-}
-
-for (var i=0; i<selection.length(); i++) {
-var layer = selection[i];
-	
-var persianLoremText = @"لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیستری را برای طراحان رایانه ای و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.";
-
-[layer setTextAlignment:1]; // Align Right
-[layer setName:@"Persian Lorem Ipsum"];
-[layer setStringValue:persianLoremText.substring(0,limit)];
+    [app displayDialog:"باید یک لایه متنی انتخاب کنید!" withTitle:"خطا!"]
 }

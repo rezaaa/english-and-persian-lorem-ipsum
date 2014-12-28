@@ -1,0 +1,30 @@
+// shortcut for text (option cmd [)
+// Version 2.1.0
+
+if(selection.length() > 0){
+    var limitNum = [doc askForUserInput:"Enter the number of characters you need" initialValue:"30"]
+    var repeatNum = limitNum / 574;
+    
+    if(limitNum <= 10000 && limitNum > -1){
+        limit = limitNum
+    }
+    else{
+        var app = [NSApplication sharedApplication];
+        [app displayDialog:"The value must be between 1 and 10,000" withTitle:"Error!"]
+    }
+
+    for (var i=0; i<selection.length(); i++) {
+        var layer = selection[i];  
+        var englishLoremText = "";
+        for (var i=0; i < repeatNum; i++) {
+            englishLoremText = englishLoremText + @"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+        }
+        [layer setTextAlignment:4]; // Align Left
+        [layer setName:@"English Lorem Ipsum"];
+        [layer setStringValue:englishLoremText.substring(0,limit)];
+    }
+}
+else{
+    var app = [NSApplication sharedApplication];
+    [app displayDialog:"You must select a text layer!" withTitle:"Error!"]
+}
