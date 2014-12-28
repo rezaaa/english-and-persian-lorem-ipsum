@@ -32,6 +32,6 @@ Select any text in Sketch and
 or use 'English & Persian Lorem Ipsum' from Plugins menu.
 
 Feedback
------------------------------
+=============================
 
 If you discover any issues , please send a message to me@rezamahmoudi.ir or find me on twitter @Rez___a.
