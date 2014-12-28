@@ -15,7 +15,7 @@ Installation
 =============================
 <ol>
   <li>Download and open <code>english-and-persian-lorem-ipsum-master.zip</code></li>
-  <li>Navigate the Sketch menu bar to Plugins ▸ Reveal Plugins Folder...</li>
+  <li>Navigate the Sketch menu bar to <code>Plugins ▸ Reveal Plugins Folder...</code></li>
   <li>Place the unziped lorem ipsum folder into the revealed plugins directory</li>
   <li>That's it...</li>
 </ol>
