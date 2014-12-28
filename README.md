@@ -13,11 +13,12 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 Installation
 =============================
-
-1- Download and open english-and-persian-lorem-ipsum-master.zip
-2- Navigate the Sketch menu bar to Plugins ▸ Reveal Plugins Folder...
-3- Place the unziped lorem ipsum folder into the revealed plugins directory
-4- That's it...
+<ol>
+<li>Download and open english-and-persian-lorem-ipsum-master.zip</li>
+<li>Navigate the Sketch menu bar to Plugins ▸ Reveal Plugins Folder...</li>
+<li>Place the unziped lorem ipsum folder into the revealed plugins directory</li>
+<li>That's it...</li>
+<ol>
 
 Also you can use sketch toolbox application for install plugins : http://sketchtoolbox.com
 
