@@ -14,11 +14,12 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 Installation
 =============================
 
-Use sketch toolbox application : http://sketchtoolbox.com
+1- Download and open english-and-persian-lorem-ipsum-master.zip
+2- Navigate the Sketch menu bar to Plugins ▸ Reveal Plugins Folder...
+3- Place the unziped lorem ipsum folder into the revealed plugins directory
+4- That's it...
 
-or
-
-Copy the contents of the ZIP to ~/Library/Application Support/sketch/Plugins (you can get access to that folder by opening the Plugins menu, choosing "Custom Script..." and then clicking in the gear icon and choosing "Open Plugins Folder")
+Also you can use sketch toolbox application for install plugins : http://sketchtoolbox.com
 
 Usage
 =============================
@@ -29,3 +30,8 @@ Select any text in Sketch and
 - hit ( ⌥ ⌘ ] ) to generate persian lorem ipsum.
 
 or use 'English & Persian Lorem Ipsum' from Plugins menu.
+
+Feedback
+=============================
+
+If you discover any issues , please send a message to me@rezamahmoudi.ir or find me on twitter @Rez___a.
