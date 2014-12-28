@@ -14,7 +14,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 Installation
 =============================
 <ol>
-  <li>Download and open english-and-persian-lorem-ipsum-master.zip</li>
+  <li>Download and open <code>english-and-persian-lorem-ipsum-master.zip</code></li>
   <li>Navigate the Sketch menu bar to Plugins ▸ Reveal Plugins Folder...</li>
   <li>Place the unziped lorem ipsum folder into the revealed plugins directory</li>
   <li>That's it...</li>
