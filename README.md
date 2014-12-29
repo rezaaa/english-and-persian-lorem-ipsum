@@ -25,10 +25,10 @@ Also you can use sketch toolbox application for install plugins : http://sketcht
 Usage
 =============================
 
-Select any text in Sketch and 
+Select any text in Sketch and hit
 
-- hit ( ⌥ ⌘ [ ) to generate english lorem ipsum.
-- hit ( ⌥ ⌘ ] ) to generate persian lorem ipsum.
+- ( ⌥ ⌘ [ ) to generate english lorem ipsum.
+- ( ⌥ ⌘ ] ) to generate persian lorem ipsum.
 
 or use 'English & Persian Lorem Ipsum' from Plugins menu.
 
