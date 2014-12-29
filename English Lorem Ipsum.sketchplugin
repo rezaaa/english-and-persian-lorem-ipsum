@@ -3,7 +3,7 @@
 
 if(selection.length() > 0){
     var limitNum = [doc askForUserInput:"Enter the number of characters you need" initialValue:"30"]
-    var repeatNum = limitNum / 574;
+    var repeatNum = limitNum / 445;
     
     if(limitNum <= 10000 && limitNum > -1){
         limit = limitNum
@@ -17,7 +17,7 @@ if(selection.length() > 0){
         var layer = selection[i];  
         var englishLoremText = "";
         for (var i=0; i < repeatNum; i++) {
-            englishLoremText = englishLoremText + @"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+            englishLoremText = englishLoremText + @"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
         }
         [layer setTextAlignment:4]; // Align Left
         [layer setName:@"English Lorem Ipsum"];
