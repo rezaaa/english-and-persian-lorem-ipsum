@@ -35,4 +35,4 @@ or use 'English & Persian Lorem Ipsum' from Plugins menu.
 Feedback
 =============================
 
-If you discover any issues , please send a message to me@rezamahmoudi.ir or find me on twitter @Rez___a.
+If you discover any issues , please send a message to me@rezamahmoudi.ir or find me on twitter @rezamahmoudii
