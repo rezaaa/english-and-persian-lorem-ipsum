@@ -1,0 +1,44 @@
+function fillLayers(layers, limit) {
+    var loremText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+    var englishLoremText = "";
+    for (var i = 0; i < loremText.length; i++) {
+      englishLoremText += loremText;
+    }
+    var count = 0;
+    var limitedString = englishLoremText.substring(0,limit)
+    for (var i = 0; i < layers.length; ++i) {
+      var layer = layers[i];
+      if (layer.className() == "MSTextLayer") {
+        [layer setStringValue:limitedString];
+        [layer setName:"Lorem Ipsum"];
+        [layer setTextAlignment:4];
+        count += 1;
+      } else if (layer.className() == "MSLayerGroup")){
+        count += fillLayer(layer.layers());
+      }
+    }
+    return count;
+}
+
+function onRun(context) {
+  var limitNumber = context.api().getStringFromUser("Please Enter the number of characters you need.", "30");
+  if(limitNumber != null) {
+    if(limitNumber <= 10000 && limitNumber > 0){
+      limit = limitNumber
+    }
+    else{
+      context.api().alert("Please enter a number between 1 and 10,000.", "Oops!");
+    }
+  }
+  else {
+    return;
+  }
+  
+  var count = fillLayers(context.selection, limit);
+  if (count == 0) {
+    context.api().alert("Please select some text objects.", "Oops!");
+  }
+  else {
+    log("Filled: " + count);
+  }
+}

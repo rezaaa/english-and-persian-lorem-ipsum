@@ -1,0 +1,35 @@
+{
+  "author" : "Mohammad Reza Mahmoudi",
+  "commands" : [
+    {
+      "script" : "scriptEN.cocoascript",
+      "name" : "English Lorem Ipsum",
+      "handlers" : {
+        "run" : "onRun"
+      },
+      "identifier" : "com.reza.loremen.run",
+      "shortcut" : "option cmd ["
+    },
+    {
+      "script" : "scriptFA.cocoascript",
+      "name" : "Persian Lorem Ipsum",
+      "handlers" : {
+        "run" : "onRun"
+      },
+      "identifier" : "com.reza.loremfa.run",
+      "shortcut" : "option cmd ]"
+    }
+  ],
+  "menu" : {
+    "items" : [
+      "com.reza.loremen.run",
+      "com.reza.loremfa.run",
+    ],
+    "title" : "Lorem Ipsum Generator"
+  },
+  "identifier" : "com.reza.lorem",
+  "version" : "3.0",
+  "description" : "A Sketch plugin to generate english and persian lorem ipsum text.",
+  "authorEmail" : "",
+  "name" : "Enlgish & Persian Lorem Ipsum"
+}

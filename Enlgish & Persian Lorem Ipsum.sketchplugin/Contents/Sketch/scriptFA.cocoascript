@@ -1,0 +1,44 @@
+function fillLayers(layers, limit) {
+    var loremText = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیستری را برای طراحان رایانه ای و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد. ";
+    var persianLoremText = "";
+    for (var i = 0; i < loremText.length; i++) {
+      persianLoremText += loremText;
+    }
+    var count = 0;
+    var limitedString = persianLoremText.substring(0,limit)
+    for (var i = 0; i < layers.length; ++i) {
+      var layer = layers[i];
+      if (layer.className() == "MSTextLayer") {
+        [layer setStringValue:limitedString];
+        [layer setName:"Lorem Ipsum"];
+        [layer setTextAlignment:1];
+        count += 1;
+      } else if (layer.className() == "MSLayerGroup")){
+        count += fillLayer(layer.layers());
+      }
+    }
+    return count;
+}
+
+function onRun(context) {
+  var limitNumber = context.api().getStringFromUser("تعداد کاراکتر مورد نیازتان را وارد کنید.", "30");
+  if(limitNumber != null) {
+    if(limitNumber <= 10000 && limitNumber > 0){
+      limit = limitNumber
+    }
+    else{
+      context.api().alert("مقدار وارد شده باید بین ۱ تا ۱۰,۰۰۰ باشد", "خطا!");
+    }
+  }
+  else {
+    return;
+  }
+    
+  var count = fillLayers(context.selection, limit);
+  if (count == 0) {
+    context.api().alert("لطفا یک لایه متنی انتخاب کنید.", "خطا!");
+  }
+  else {
+    log("Filled: " + count);
+  }
+}
