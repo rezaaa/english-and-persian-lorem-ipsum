@@ -1,8 +1,8 @@
-English-and-Persian-Lorem-Ipsum-Plugin-for-Sketch - Version 2.1.0
+English-and-Persian-Lorem-Ipsum-Plugin-for-Sketch - Version 3.0.0
 
 =============================
 
-This is a plugin for quickly creating english & persian(farsi) Lorem Ipsum text in Sketch.
+This is a plugin for creating english & persian(farsi) Lorem Ipsum text in Sketch.
 
 <pre>
 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیستری را برای طراحان رایانه ای و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
@@ -15,8 +15,7 @@ Installation
 =============================
 <ol>
   <li>Download and open <code>english-and-persian-lorem-ipsum-master.zip</code></li>
-  <li>Navigate the Sketch menu bar to <code>Plugins ▸ Reveal Plugins Folder...</code></li>
-  <li>Place the unziped lorem ipsum folder into the revealed plugins directory</li>
+  <li>Double click on <code>Enlgish & Persian Lorem Ipsum.sketchplugin</code> file</li>
   <li>That's it...</li>
 </ol>
 
