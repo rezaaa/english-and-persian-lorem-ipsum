@@ -29,7 +29,7 @@ Select any text in Sketch and hit
 - ( ⌥ ⌘ [ ) to generate english lorem ipsum.
 - ( ⌥ ⌘ ] ) to generate persian lorem ipsum.
 
-or use 'English & Persian Lorem Ipsum' from Plugins menu.
+or use 'Lorem Ipsum Generator' from Plugins menu.
 
 Feedback
 =============================
