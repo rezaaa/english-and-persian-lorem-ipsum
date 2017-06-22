@@ -1,0 +1,52 @@
+*{
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+
+body {
+  font-family: 'Roboto Mono';
+  color: #32325D;
+}
+
+.main {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translate3d(0,-50%,0);
+  text-align: center;
+}
+
+h1 {
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+.version {
+  font-size: 18px;
+  margin-bottom: 70px;
+  color: #6B7C93;
+}
+
+.btn {
+  background: #f1b407;
+  color: #fff;
+  padding: 18px 25px;
+  margin: 0 3px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #DCA303;
+}
+
+.github {
+  background: #24292e;
+}
+
+.github:hover {
+  background: #222;
+}
