@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Lorem Ipsum Generator</title>
+    <link>https://rezaaa.github.io/english-and-persian-lorem-ipsum/files/appcast.xml</link>
+    <description>A Sketch extension to generate english and persian lorem ipsum text</description>
+    <language>en</language>
+      <item>
+        <title>Version 3.1</title>
+        <description>
+          <![CDATA[
+            <h2> Update v3.1 </h2>
+            <ul>
+            <li> Added the appcast updates</li>
+            </ul>
+          ]]>
+        </description>
+        <enclosure url="https://rezaaa.github.io/english-and-persian-lorem-ipsum/files/builds/english-and-persian-lorem-ipsum.v.3.1.zip" sparkle:version="3.1" type="application/octet-stream" />
+      </item>
+  </channel>
+</rss>
