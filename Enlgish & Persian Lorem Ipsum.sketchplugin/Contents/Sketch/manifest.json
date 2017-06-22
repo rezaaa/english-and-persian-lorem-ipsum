@@ -28,6 +28,7 @@
     "title" : "Lorem Ipsum Generator"
   },
   "identifier" : "com.reza.lorem",
+  "appcast": "https://rezaaa.github.io/english-and-persian-lorem-ipsum/files/appcast.xml",
   "version" : "3.0",
   "description" : "A Sketch extension to generate english and persian lorem ipsum text.",
   "authorEmail" : "",
