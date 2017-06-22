@@ -1,4 +1,4 @@
-English-and-Persian-Lorem-Ipsum-Extension-for-Sketch - Version 3.0.0
+English-and-Persian-Lorem-Ipsum-Extension-for-Sketch - Version 3.1
 
 =============================
 
