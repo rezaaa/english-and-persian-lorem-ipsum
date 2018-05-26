@@ -23,7 +23,7 @@
   "menu" : {
     "items" : [
       "com.reza.loremen.run",
-      "com.reza.loremfa.run",
+      "com.reza.loremfa.run"
     ],
     "title" : "Lorem Ipsum Generator"
   },
